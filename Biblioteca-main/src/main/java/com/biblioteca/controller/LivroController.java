@@ -37,9 +37,7 @@ public class LivroController {
   }
 
 
-
 // Função para emprestar um livro
-  // Implementação localizada aqui
   public String emprestarLivro(int id) {
     Livro livro = buscarLivro(id);
     if (livro != null) {
@@ -56,7 +54,6 @@ public class LivroController {
   }
 
   // Função para devolver um livro
-  // Implementação localizada aqui
   public String devolverLivro(int id) {
     Livro livro = buscarLivro(id);
     if (livro != null) {

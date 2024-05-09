@@ -6,15 +6,17 @@ public class Livro extends AbstractEntity {
 
   private String autor;
 
+  private String status;
+
 
   private boolean emprestado;
 
-  public Livro(String titulo, String autor, int numPaginas) {
+  public Livro(String autor, String titulo) {
     this.titulo = titulo;
     this.autor = autor;
   }
 
-  public Livro(int id, String titulo, String autor, int numPaginas) {
+  public Livro(int id, String titulo, String autor) {
     super.setId(id);
     this.titulo = titulo;
     this.autor = autor;
@@ -44,4 +46,16 @@ public void setEmprestado(boolean b) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'setEmprestado'");
 }
+
+  public String setStatus(String status){
+    return status;
+  }
+
+  public String getStatus(){
+    return status;
+  }
+
+
+
+
 }
